@@ -8,10 +8,13 @@ export const Input = ({
   className,
   onChange,
   value,
+  inputValue,
 }) => {
   return (
     <>
-      <label htmlFor={id} className="text-white font-bold ">{label}</label>
+      <label htmlFor={id} className="text-white font-bold ">
+        {label}
+      </label>
       <br />
       <input
         type={type}
@@ -21,6 +24,7 @@ export const Input = ({
         onChange={onChange}
         className={`border border-black w-64 px-3 py-2 rounded-lg font-semibold ${className}`}
       />
+      {inputValue && <p className="font-bold text-white">{inputValue}</p>}
     </>
   );
 };

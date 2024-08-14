@@ -35,6 +35,7 @@ export const Comparator = () => {
         name={"number1"}
         type={"number"}
         className={"mb-5"}
+        inputValue={input1Value}
         onChange={(e) => {
           setInput1Value(e.target.value);
         }}
@@ -66,11 +67,12 @@ export const Comparator = () => {
         name={"number2"}
         type={"number"}
         className={"mb-5"}
+        inputValue={input2Value}
         onChange={(e) => {
           setInput2Value(e.target.value);
         }}
       />
-      <div>
+      <div className="my-5">
         <h1 className="font-bold text-white text-xl">Result</h1>
         <p
           className={`pl-5 font-extrabold text-lg tracking-wider ${
